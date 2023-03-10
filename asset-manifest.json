@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.d2ad772f.css",
-    "main.js": "/react-gh-pages/static/js/main.6cd08088.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.d2ad772f.css.map": "/react-gh-pages/static/css/main.d2ad772f.css.map",
-    "main.6cd08088.js.map": "/react-gh-pages/static/js/main.6cd08088.js.map"
+    "main.css": "/prueba-tecnica-kites-react-bootstrap/static/css/main.d2ad772f.css",
+    "main.js": "/prueba-tecnica-kites-react-bootstrap/static/js/main.6cd08088.js",
+    "index.html": "/prueba-tecnica-kites-react-bootstrap/index.html",
+    "main.d2ad772f.css.map": "/prueba-tecnica-kites-react-bootstrap/static/css/main.d2ad772f.css.map",
+    "main.6cd08088.js.map": "/prueba-tecnica-kites-react-bootstrap/static/js/main.6cd08088.js.map"
   },
   "entrypoints": [
     "static/css/main.d2ad772f.css",
