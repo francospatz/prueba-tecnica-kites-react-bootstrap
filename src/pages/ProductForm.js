@@ -94,7 +94,7 @@ const ProductForm = (props) => {
             return <Form.Label>{text}s: </Form.Label>;
         }
     };
-    const handleClose = () => setShow(false);
+
     const handleAddProduct = (e) => {
         e.preventDefault();
         const newProduct = {
@@ -115,17 +115,17 @@ const ProductForm = (props) => {
         setChosenWebs([]);
         setChosenFiles([]);
         setChosenLanguages([]);
-        props.setM(props.m + 1);
         setShow(true);
         setTimeout(() => {
-            handleClose();
+            setShow(false);
             navigate(-1);
         }, 1500);
+
     };
 
     return (
         <main>
-            <Modal show={show} onHide={handleClose} backdrop={false} >
+            <Modal show={show} onHide={() => setShow(false)} backdrop={false} >
                 <Modal.Body>Product added successfully!</Modal.Body>
             </Modal>
             <Container fluid className="pt-2">
