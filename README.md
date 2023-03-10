@@ -1,6 +1,9 @@
-**Prueba técnica Kites**
+## Prueba técnica Kites
 
 Product visualizer made in React with React-Bootstrap
+
+## Live demo
+* [Here](https://francospatz.github.io/prueba-tecnica-kites-react-bootstrap/ ":)")
 
 ## Quick start
 ```
