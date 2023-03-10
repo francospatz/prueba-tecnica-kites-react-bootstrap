@@ -14,6 +14,7 @@ Product visualizer made in React with React-Bootstrap
 - Fix a small and hidden (not so hidden) hardcode
 - Form validation
 - Add pagination
+- Create a form custom hook 
 
 ## Quick start
 ```
