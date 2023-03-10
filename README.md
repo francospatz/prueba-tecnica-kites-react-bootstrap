@@ -13,6 +13,7 @@ Product visualizer made in React with React-Bootstrap
 - Fix a bug that makes the row hover not cover the 100% of the parent's width
 - Fix a small and hidden (not so hidden) hardcode
 - Form validation
+- Add pagination
 
 ## Quick start
 ```
