@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/prueba-tecnica-kites-react-bootstrap/static/css/main.d2ad772f.css",
-    "main.js": "/prueba-tecnica-kites-react-bootstrap/static/js/main.6cd08088.js",
+    "main.js": "/prueba-tecnica-kites-react-bootstrap/static/js/main.82a5bc51.js",
     "index.html": "/prueba-tecnica-kites-react-bootstrap/index.html",
     "main.d2ad772f.css.map": "/prueba-tecnica-kites-react-bootstrap/static/css/main.d2ad772f.css.map",
-    "main.6cd08088.js.map": "/prueba-tecnica-kites-react-bootstrap/static/js/main.6cd08088.js.map"
+    "main.82a5bc51.js.map": "/prueba-tecnica-kites-react-bootstrap/static/js/main.82a5bc51.js.map"
   },
   "entrypoints": [
     "static/css/main.d2ad772f.css",
-    "static/js/main.6cd08088.js"
+    "static/js/main.82a5bc51.js"
   ]
 }
