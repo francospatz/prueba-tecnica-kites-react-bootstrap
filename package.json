@@ -1,6 +1,7 @@
 {
   "name": "prueba-tecnica-kites-react-bootstrap",
   "version": "0.1.0",
+  "homepage": "https://francospatz.github.io/prueba-tecnica-kites-react-bootstrap/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -26,6 +27,8 @@
     "uuid": "^9.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "create-react-component-folder": "^0.3.7"
+    "create-react-component-folder": "^0.3.7",
+    "gh-pages": "^5.0.0"
   }
 }

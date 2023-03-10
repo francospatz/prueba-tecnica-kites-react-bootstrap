@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Button, Form } from "react-bootstrap";
+import { Container, Button, Form, Modal } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faPlus, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +9,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { presetWebs, presetFiles, presetLanguages } from "../data/data";
 
 const ProductForm = (props) => {
+    const [show, setShow] = useState(false);
     const navigate = useNavigate();
     // Image
     const [image, setImage] = useState("");
@@ -93,7 +94,7 @@ const ProductForm = (props) => {
             return <Form.Label>{text}s: </Form.Label>;
         }
     };
-
+    const handleClose = () => setShow(false);
     const handleAddProduct = (e) => {
         e.preventDefault();
         const newProduct = {
@@ -114,13 +115,19 @@ const ProductForm = (props) => {
         setChosenWebs([]);
         setChosenFiles([]);
         setChosenLanguages([]);
-        props.setShow(true)
-        navigate(-1);
-
+        props.setM(props.m + 1);
+        setShow(true);
+        setTimeout(() => {
+            handleClose();
+            navigate(-1);
+        }, 1500);
     };
 
     return (
         <main>
+            <Modal show={show} onHide={handleClose} backdrop={false} >
+                <Modal.Body>Product added successfully!</Modal.Body>
+            </Modal>
             <Container fluid className="pt-2">
 
                 <Button

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Modal } from "react-bootstrap";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 // Components
@@ -15,15 +14,6 @@ const ProductTable = (props) => {
     const [entries, setEntries] = useState(10);
     const [searchTerm, setSearchTerm] = useState("");
     const [sortOrder, setSortOrder] = useState("desc");
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-
-    useEffect(() => {
-        setShow(props.show);
-        setTimeout(() => {
-            setShow(false);
-        }, 2000);
-    }, [props.show]);
     // React router history
     const navigate = useNavigate();
 
@@ -59,9 +49,7 @@ const ProductTable = (props) => {
         <>
             <Sidebar />
             <main className="content">
-                <Modal show={show} onHide={handleClose} backdrop={false} >
-                    <Modal.Body>Product added successfully!</Modal.Body>
-                </Modal>
+
                 <LowerNavbar />
                 <PSettings
                     handleAddProduct={handleAddProduct}

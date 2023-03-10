@@ -13,15 +13,14 @@ import { list } from "../data/data";
 const Home = () => {
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [productList, setProductList] = useState(list);
-    const [show, setShow] = useState(false);
 
     const value = { selectedProduct, setSelectedProduct };
 
     return (
         <ProductContext.Provider value={value}>
             <Routes>
-                <Route path="/" element={<ProductTable list={productList} show={show} setShow={setShow} />} />
-                <Route path="/form" element={<ProductForm productList={productList} setProductList={setProductList} setShow={setShow} />} />
+                <Route path="/" element={<ProductTable list={productList} />} />
+                <Route path="/form" element={<ProductForm productList={productList} setProductList={setProductList} />} />
                 <Route path="/overview" element={<ProductOverview />} />
             </Routes>
         </ProductContext.Provider>
