@@ -15,7 +15,7 @@ Product visualizer made in React with React-Bootstrap
 - Form validation
 - Add pagination
 - Create a form custom hook
-- allow the user to choose whether to view the products in a horizontal list or on vertical cards (for the mobile view)
+- Let the user choose whether to view the products in a horizontal list or on vertical cards (for the mobile view)
 
 ## Quick start
 ```
