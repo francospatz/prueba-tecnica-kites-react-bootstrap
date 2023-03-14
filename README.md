@@ -16,6 +16,7 @@ Product visualizer made in React with React-Bootstrap
 - Add pagination
 - Create a form custom hook
 - Let the user choose whether to view the products in a horizontal list or on vertical cards (for the mobile view)
+- Testing
 
 ## Quick start
 ```
